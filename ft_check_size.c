@@ -34,6 +34,8 @@ int		ft_check_size(char **tabstr)
 		}
 		if (hashtag != 4 || backslash_n != 5)
 		{
+			if (tabstr[i + 1] != NULL)
+				return (-1);
 			if (tabstr[i + 1] == NULL && (hashtag != 4 || backslash_n != 4))
 				return (-1);
 		}
